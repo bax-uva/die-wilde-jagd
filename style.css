@@ -1,6 +1,6 @@
 /*
 1 - general
-2 - typogrpahy
+2 - typography
 3 - layout
 4 - colors
 5 - media queries
@@ -27,35 +27,49 @@ ul {
   list-style-type: none;
 }
 
-/* 2 - typogrpahy */
+/* 2 - typography */
 h1 {
   font-size: 1.2em;
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   color: #eb5b5b;
 }
 
 h2 {
   font-size: 1.2em;
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
 }
 
 h3 {
   font-size: 1.2em;
-  font-family: 'Sorts Mill Goudy', serif;
+  font-family: "Sorts Mill Goudy", serif;
 }
-
+.contact p a {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+}
 p {
   font-size: 1em;
-  font-family: 'Sorts Mill Goudy', serif;
+  font-family: "Sorts Mill Goudy", serif;
   font-weight: 300;
+  line-height: 130%;
 }
 
 .lyrics p {
   font-size: 0.8em;
 }
+.contact h3 {
+  font-size: 1em;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+}
 
 /* 3 - layout */
-.nav, .main, footer, .description, .about, header {
+.nav,
+.main,
+footer,
+.description,
+.about,
+header {
   width: 90%;
   display: flex;
   margin: auto;
@@ -64,7 +78,8 @@ p {
   flex-direction: column;
 }
 
-header, footer {
+header,
+footer {
   flex-direction: column;
 }
 
@@ -91,11 +106,15 @@ nav {
   text-align: center;
 }
 
-.nav-button1, .nav-button5, .nav-button4 {
+.nav-button1,
+.nav-button5,
+.nav-button4 {
   transform: skew(0.5deg, 0.5deg) scale(1, 1.05) translate(0%, 5%);
 }
 
-.nav-button2, .nav-button3, .nav-button5 {
+.nav-button2,
+.nav-button3,
+.nav-button5 {
   transform: skew(-1deg, -1deg) scale(1.1, 1.1) translate(0%, 5%);
 }
 
@@ -112,7 +131,6 @@ ul {
   display: flex;
   flex-direction: column;
 }
-
 
 .social-networks {
   display: flex;
@@ -172,12 +190,13 @@ section {
 }
 
 /* 4 - colors */
-nav, .description {
+nav,
+.description {
   animation: appear 5s forwards;
 }
 
 .main {
-  color: white;
+  color: #c0c0c1;
 }
 
 .main {
@@ -220,7 +239,8 @@ nav, .description {
     flex-direction: column;
   }
 
-  .description, .about {
+  .description,
+  .about {
     margin-top: 3em;
     display: flex;
     width: 60%;
@@ -234,7 +254,8 @@ nav, .description {
     background-image: url(assets/bg-compressed.jpg);
   }
 
-  .description-english, .description-deutsch {
+  .description-english,
+  .description-deutsch {
     width: 47%;
     text-shadow: 0.2px 0.2px rgba(0, 0, 0, 0.8);
   }
@@ -243,11 +264,12 @@ nav, .description {
     margin-top: 3em;
   }
 
-  nav, ul {
+  nav,
+  ul {
     flex-direction: row;
   }
   .main-nav ul li:first-child {
-      display: none;
+    display: none;
   }
   ul {
     width: 100%;
@@ -260,7 +282,8 @@ nav, .description {
     flex-wrap: wrap;
   }
 
-  .social-networks, .social-icons {
+  .social-networks,
+  .social-icons {
     flex-direction: row;
   }
 
@@ -280,6 +303,14 @@ nav, .description {
 
   .description-deutsch {
     transform: skew(-1deg, -1deg) scale(1.1, 1.1) translate(-1%, 5%);
+  }
+  .contact p a,
+  .contact p {
+    font-size: 1.1em;
+  }
+  .contact {
+    width: 70%;
+    margin: auto;
   }
 }
 
