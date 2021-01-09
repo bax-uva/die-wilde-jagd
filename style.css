@@ -91,7 +91,7 @@ footer {
 
 .title-img {
   padding: 3em 0 3em 0;
-  width: 80%;
+  width: 100%;
   margin: auto;
 }
 
@@ -228,6 +228,9 @@ nav,
   }
   .social-media-icon {
     margin-top: 25px;
+  }
+  section {
+    padding-bottom: 150px;
   }
 
   .lyrics {
