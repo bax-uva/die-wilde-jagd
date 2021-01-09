@@ -12,7 +12,8 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: "Sorts Mill Goudy", serif;
+  font-size: 16px;
 }
 
 img {
@@ -29,35 +30,30 @@ ul {
 }
 
 /* 2 - typography */
-h1 {
-  font-size: 1.2em;
+h1, h2, h3 {
   font-family: "Oswald", sans-serif;
+
+}
+h1, h2, h3 {
+  font-size: 37.90px;
+}
+h1 {
   color: #eb5b5b;
 }
 
-h2 {
-  font-size: 1.2em;
+header {
   font-family: "Oswald", sans-serif;
-}
+    font-size: 37.90px;
 
-h3 {
-  font-size: 1.2em;
-  font-family: "Sorts Mill Goudy", serif;
 }
 .contact p a {
   font-family: "Oswald", sans-serif;
-  font-weight: 400;
 }
 p {
   font-size: 1em;
-  font-family: "Sorts Mill Goudy", serif;
-  font-weight: 300;
   line-height: 150%;
 }
 
-.lyrics p {
-  font-size: 0.8em;
-}
 .contact h3 {
   font-size: 1em;
   font-family: "Oswald", sans-serif;
@@ -105,6 +101,9 @@ nav {
   display: flex;
   justify-content: center;
   text-align: center;
+}
+nav ul li {
+  padding: 20px 0;
 }
 
 .nav-button1,
@@ -155,7 +154,7 @@ span {
 }
 
 .social-media-icon:hover {
-  fill: pink;
+  fill: #eb5b5b;
 }
 
 span {
@@ -223,6 +222,11 @@ nav,
 }
 
 @media screen and (min-width: 700px) {
+  header {
+    font-family: "Oswald", sans-serif;
+      font-size: 21.33px;
+  }
+
   .lyrics {
     width: 80%;
   }
