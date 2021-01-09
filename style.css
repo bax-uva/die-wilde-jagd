@@ -226,6 +226,9 @@ nav,
     font-family: "Oswald", sans-serif;
       font-size: 21.33px;
   }
+  .social-media-icon {
+    margin-top: 25px;
+  }
 
   .lyrics {
     width: 80%;
