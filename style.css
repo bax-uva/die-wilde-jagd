@@ -101,6 +101,7 @@ nav {
   display: flex;
   justify-content: center;
   text-align: center;
+  padding-bottom: 200px;
 }
 nav ul li {
   padding: 20px 0;
@@ -138,28 +139,31 @@ ul {
   flex-direction: column;
 }
 
-.social-icons {
+.social-icons, .social-networks {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  padding: 10px 0;
+  justify-content: center;
+  align-items: flex-end;
 }
 
-span {
+/* span {
   display: none;
-}
+} */
 
 .social-media-icon {
   fill: white;
   font-size: 1.8em;
-  margin: 0 0.2em 0 0.2em;
+  margin: 0 0.4em;
 }
 
 .social-media-icon:hover {
   fill: #eb5b5b;
 }
 
-span {
+/* span {
   margin-top: 1.3em;
-}
+} */
 section {
   width: 95%;
   margin: auto;
@@ -221,11 +225,22 @@ nav,
   }
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 700px) and (max-width: 892px) {
+
+  header {
+      font-size: 17px;
+  }
+
+}
+@media screen and (min-width: 892px) {
   header {
     font-family: "Oswald", sans-serif;
       font-size: 21.33px;
   }
+}
+
+@media screen and (min-width: 700px) {
+
   .social-media-icon {
     margin-top: 25px;
   }
@@ -287,17 +302,17 @@ nav,
     width: 100%;
     justify-content: space-between;
   }
-
+.social-networks {
+  margin-top: -20px;
+}
   nav {
     width: 70%;
     margin: auto;
     flex-wrap: wrap;
+    padding-bottom: 0;
+
   }
 
-  .social-networks,
-  .social-icons {
-    flex-direction: row;
-  }
 
   span {
     display: block;
