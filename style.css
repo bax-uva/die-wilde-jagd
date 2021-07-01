@@ -37,6 +37,9 @@ h1, h2, h3, header {
 p {
   line-height: 150%;
 }
+.description-english a:hover{
+  text-decoration: underline;
+}
 /* 3 - layout */
 nav, .main, footer, .description, .about, header, ul, .about-mobile, .social-media, .social-icons  {
   display: flex;
@@ -230,17 +233,20 @@ section {
     justify-content: space-between;
     //animation: flicker 5s infinite;
   }
-  .description-english,
-  .description-deutsch {
-    width: 47%;
+  .description-english {
+    text-align: center;
+    width: 90%;
+    margin: auto;
+    font-size: 18px;
     text-shadow: 0.2px 0.2px rgba(0, 0, 0, 0.8);
   }
+
   .description-english {
-    transform: skew(0.2deg, 1deg) scale(1, 1.05) translate(-5%, 4%);
+    /* transform: skew(0.2deg, 1deg) scale(1, 1.05) translate(-5%, 4%); */
   }
-  .description-deutsch {
+  /* .description-deutsch {
     transform: skew(-1deg, -1deg) scale(1.1, 1.1) translate(-1%, 5%);
-  }
+  } */
   .contact p a,
   .contact p {
     font-size: 1.1em;
