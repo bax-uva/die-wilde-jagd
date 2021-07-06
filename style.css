@@ -37,7 +37,10 @@ h1, h2, h3, header {
 p {
   line-height: 150%;
 }
-.description-english a:hover{
+/* .description-english a:hover{
+  text-decoration: underline;
+} */
+.main-link {
   text-decoration: underline;
 }
 /* 3 - layout */
